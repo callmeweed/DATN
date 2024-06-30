@@ -1,0 +1,176 @@
+schema:
+  table_name: wifeed_bctc_ket_qua_kinh_doanh_chung_khoan_raw
+  columns:
+    - name: code
+      type: text
+    - name: type
+      type: text
+    - name: quy
+      type: numeric
+    - name: nam
+      type: numeric
+    - name: donvikiemtoan
+      type: text
+    - name: ykienkiemtoan
+      type: text
+    - name: doanhthuhoatdong
+      type: numeric
+    - name: laitucactaisantcfvtpl
+      type: numeric
+    - name: laibantaisantcfvtpl
+      type: numeric
+    - name: chenhlechtangvedglcacfvtpl
+      type: numeric
+    - name: cotuctienlaiphatsinhtutaisantcfvtpl
+      type: numeric
+    - name: laitucackhoandautunamgiudenngaydaohanhtm
+      type: numeric
+    - name: laitucackhoanchovayvaphaithu
+      type: numeric
+    - name: laitutaisantcsansangdebanafs
+      type: numeric
+    - name: laitucaccongcuphatsinhphongnguaruiro
+      type: numeric
+    - name: doanhthuhoatdongmoigioick
+      type: numeric
+    - name: doanhthubaolanhdailyphathanhck
+      type: numeric
+    - name: doanhthutuvandautuck
+      type: numeric
+    - name: doanhthuhoatdonguythacdaugia
+      type: numeric
+    - name: doanhthuhoatdongluukyck
+      type: numeric
+    - name: doanhthuhoatdongtuvantc
+      type: numeric
+    - name: doanhthuhoatdongkhac
+      type: numeric
+    - name: cackhoangiamtrudoanhthu
+      type: numeric
+    - name: cphoatdong
+      type: numeric
+    - name: lotucactaisantcfvtpl
+      type: numeric
+    - name: lotubancactaisantcfvtpl
+      type: numeric
+    - name: chenhlechgiamdglcacfvtpl
+      type: numeric
+    - name: cpgdmuacactaisantcfvtpl
+      type: numeric
+    - name: locackhoandautunamgiudenngaydaohanhtm
+      type: numeric
+    - name: cplaivaylotucackhoanchovayvaphaithu
+      type: numeric
+    - name: lovachenhlechdgltaisanafskhiphanloailai
+      type: numeric
+    - name: cpdphoannhaptstc
+      type: numeric
+    - name: lotucactaisantcphaisinhphongnguaruiro
+      type: numeric
+    - name: cphoatdongtudoanh
+      type: numeric
+    - name: cphoatdongmoigioick
+      type: numeric
+    - name: cphoatdongbaolanhdailyphathanhck
+      type: numeric
+    - name: cphoatdongtuvandautuck
+      type: numeric
+    - name: cphoatdongdaugiauythac
+      type: numeric
+    - name: cpnghiepvuluukyck
+      type: numeric
+    - name: cphoatdongtuvantc
+      type: numeric
+    - name: cphoatdongkhac
+      type: numeric
+    - name: lngop
+      type: numeric
+    - name: doanhthuhoatdongtc
+      type: numeric
+    - name: chenhlechlaitygiahoidoaidavachuathuchien
+      type: numeric
+    - name: doanhthuduthucotuclaitienguikhongcodinh
+      type: numeric
+    - name: laibanthanhlycackhoandautulkld
+      type: numeric
+    - name: doanhthukhacvedautu
+      type: numeric
+    - name: cptc
+      type: numeric
+    - name: chenhlechlotygiahoidoaidavachuathuchien
+      type: numeric
+    - name: cplaivay_pl
+      type: numeric
+    - name: cpdpcackhoandaututcdaihan
+      type: numeric
+    - name: cptckhac
+      type: numeric
+    - name: lailotucongtyliendoanhlienket
+      type: numeric
+    - name: cpbanhang
+      type: numeric
+    - name: cpql
+      type: numeric
+    - name: ketquahoatdongkd
+      type: numeric
+    - name: lnkhac
+      type: numeric
+    - name: thunhapkhac
+      type: numeric
+    - name: cpkhac
+      type: numeric
+    - name: tonglnketoantruocthue
+      type: numeric
+    - name: lndathuchien_pl
+      type: numeric
+    - name: lnchuathuchien_pl
+      type: numeric
+    - name: cpthuetndn
+      type: numeric
+    - name: cpthuetndnhienhanh
+      type: numeric
+    - name: cpthuetndnhoanlai
+      type: numeric
+    - name: lnsauthue
+      type: numeric
+    - name: lnsauthuecuachusohuu
+      type: numeric
+    - name: loiichcuacodongthieuso
+      type: numeric
+    - name: lnsauthuephanbokhac
+      type: numeric
+    - name: thunhaptoandienkhacsauthuetndn
+      type: numeric
+    - name: lailotudanhgialaicackhoandautugiudenngaydaohan
+      type: numeric
+    - name: lailotudanhgialaicactaisantcsansangdeban
+      type: numeric
+    - name: lailotoandienkhacduocchiatuhoatdongdautuvaocongtycon
+      type: numeric
+    - name: lailotudanhgialaicaccongcutcphaisinh
+      type: numeric
+    - name: lailochenhlechtygiacuahoatdongtainuocngoai
+      type: numeric
+    - name: lailotucackhoandautuvaocongtyconcongtylienketliendoanh
+      type: numeric
+    - name: lailodanhgiacongcuphaisinh
+      type: numeric
+    - name: lailodanhgialaitaisancodinhtheomohinhgiatrihoply
+      type: numeric
+    - name: lailokhac
+      type: numeric
+    - name: tongthunhaptoandien
+      type: numeric
+    - name: tongthunhaptoandienphanbochocodongthieuso
+      type: numeric
+    - name: tongthunhaptoandienphanbochovonchusohuu
+      type: numeric
+    - name: laicobantrencophieu
+      type: numeric
+    - name: thunhapphaloangtrencophieu
+      type: numeric
+  primary:
+    - code
+    -  type
+    -  quy
+    -  nam

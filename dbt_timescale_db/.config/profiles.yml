@@ -1,0 +1,31 @@
+dbt_timescale_db:
+    target: prod
+    outputs:
+      prod:
+        type: postgres
+
+        # More information for the options in this file
+        # can be found here: https://docs.getdbt.com/dbt-cli/configure-your-profile
+
+        threads: 20
+        # Additional Redshift options
+        # Find out more about Redshift config options here:
+        # https://docs.getdbt.com/reference/warehouse-profiles/redshift-profile
+
+        # Set the TEST_DATABASE in your CI
+        dbname: dsai
+        schema: public
+
+        # Set variable DBT_USER in your CI
+        user: airflow
+
+        # Set variable DBT_PASSWORD in your CI
+        password: airflow
+
+        # Set variable DBT_TIMESCALEDB_ACCOUNT in your CI
+        host: postgres
+
+        port: 5432
+        keepalives_idle: 0 # default 0, indicating the system default
+        # search_path: public # optional, not recommended
+        # sslmode: [optional, set the sslmode used to connect to the database (in case this parameter is set, will look for ca in ~/.postgresql/root.crt)]

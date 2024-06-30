@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: flex
+    description: A replica of the OracleDB database used as the backend of FLEX
+    schema: flex
+    tables:
+      - name: sbcldr
+        columns:
+          - name: autoid
+            tests:
+              - not_null
+              - unique

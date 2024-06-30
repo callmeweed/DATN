@@ -1,0 +1,34 @@
+[run]
+source = .
+omit = 
+    ./venv/*
+    *test*
+    *apps.py
+    *manage.py
+    *__init__.py
+    *migrations*
+    *asgi*
+    *wsgi*
+    *admin.py
+    *urls.py
+    common/models/*
+    dags/dag_kafka_uat_to_s3.py
+    dags/consumer_crawled_news_to_blob.py
+    stream_processors/kubernetes/consumer/duplication_symbol_detector/src/common/*
+
+[report]
+omit =
+    ./venv/*
+    *test*
+    *apps.py
+    *manage.py
+    *__init__.py
+    *migrations*
+    *asgi*
+    *wsgi*
+    *admin.py
+    *urls.py
+    common/models/*
+    dags/dag_kafka_uat_to_s3.py
+    dags/consumer_crawled_news_to_blob.py
+    stream_processors/kubernetes/consumer/duplication_symbol_detector/src/common/*

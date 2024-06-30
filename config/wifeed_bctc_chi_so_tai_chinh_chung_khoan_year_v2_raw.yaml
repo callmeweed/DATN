@@ -1,0 +1,340 @@
+schema:
+  table_name: wifeed_bctc_chi_so_tai_chinh_chung_khoan_year_v2_raw
+  columns:
+    - name: mack
+      type: text
+    - name: type
+      type: text
+    - name: quy
+      type: numeric
+    - name: nam
+      type: numeric
+    - name: tilechovaykq
+      type: numeric
+    - name: tsquanlytheocamket
+      type: numeric
+    - name: dtnhdt
+      type: numeric
+    - name: dtchovay
+      type: numeric
+    - name: dtdanhgialaifvtpl
+      type: numeric
+    - name: dtbantsfvtpl
+      type: numeric
+    - name: dtfvtpl
+      type: numeric
+    - name: dthtm
+      type: numeric
+    - name: dtafs
+      type: numeric
+    - name: dttudoanhvanguonvon
+      type: numeric
+    - name: doanhthu
+      type: numeric
+    - name: chiphinhdt
+      type: numeric
+    - name: chiphihoatdong
+      type: numeric
+    - name: laitudoanhnguonvonchovaykyquy
+      type: numeric
+    - name: lainganhangdt
+      type: numeric
+    - name: laimoigioi
+      type: numeric
+    - name: laituvantaichinh
+      type: numeric
+    - name: tile_cpdphoannhaptstc
+      type: numeric
+    - name: tile_chiphitudoanh
+      type: numeric
+    - name: tile_chiphimoigioi
+      type: numeric
+    - name: tile_chiphibaolanh
+      type: numeric
+    - name: tile_chiphidautuck
+      type: numeric
+    - name: tile_chiphidaugia
+      type: numeric
+    - name: tile_chiphiluuky
+      type: numeric
+    - name: tile_chiphituvan
+      type: numeric
+    - name: tile_chiphikhac
+      type: numeric
+    - name: tile_nganhangdt
+      type: numeric
+    - name: tile_dtchovay
+      type: numeric
+    - name: tile_tudoanhnguonvon
+      type: numeric
+    - name: tile_moigioichungkhoan
+      type: numeric
+    - name: tile_cpniemyet
+      type: numeric
+    - name: tile_cpchuaniemyet
+      type: numeric
+    - name: tile_chungchiquy
+      type: numeric
+    - name: tile_traiphieu
+      type: numeric
+    - name: tile_tiengui
+      type: numeric
+    - name: tile_chovaymargin
+      type: numeric
+    - name: tile_chovayungtrc
+      type: numeric
+    - name: tongcongtaisan_yoy
+      type: numeric
+    - name: taisantcnganhan_yoy
+      type: numeric
+    - name: tienvacackhoantuongduongtien_yoy
+      type: numeric
+    - name: taisantcfvtpl_yoy
+      type: numeric
+    - name: dautugiudenngaydaohanhtm_yoy
+      type: numeric
+    - name: cackhoanchovay_yoy
+      type: numeric
+    - name: cackhoantcsansangdebanafs_yoy
+      type: numeric
+    - name: dpsuygiamtaisantc_yoy
+      type: numeric
+    - name: tongcackhoanphaithunganhan_yoy
+      type: numeric
+    - name: phaithucacdichvuctckcungcap_yoy
+      type: numeric
+    - name: tratruocchonguoiban_yoy
+      type: numeric
+    - name: cackhoanphaithukhac_yoy
+      type: numeric
+    - name: taisannganhankhac_tong_yoy
+      type: numeric
+    - name: taisantcdaihan_yoy
+      type: numeric
+    - name: nonganhan_yoy
+      type: numeric
+    - name: vayvanothuetcnganhan_yoy
+      type: numeric
+    - name: traiphieuphathanhnganhan_yoy
+      type: numeric
+    - name: nguoimuatratientruocnganhan_yoy
+      type: numeric
+    - name: phaitrahoatdonggiaodichchungkhoan_yoy
+      type: numeric
+    - name: cpphaitranganhan_yoy
+      type: numeric
+    - name: nodaihan_yoy
+      type: numeric
+    - name: traiphieuphathanhdaihan_yoy
+      type: numeric
+    - name: vonchusohuu_tong_yoy
+      type: numeric
+    - name: vongopcuachusohuu_yoy
+      type: numeric
+    - name: tm_tienguicuandt_yoy
+      type: numeric
+    - name: tm_taisantcniemyetdangkygdtaivsdcuactck_yoy
+      type: numeric
+    - name: tm_taisantcdaluukytaivsdvachuagdcuactck_yoy
+      type: numeric
+    - name: tm_taisantcchovecuactck_yoy
+      type: numeric
+    - name: tm_taisantcchualuukytaivsdcuactck_yoy
+      type: numeric
+    - name: tsquanlytheocamket_yoy
+      type: numeric
+    - name: tm_phaitrandtvetienguigdcknhtmql_yoy
+      type: numeric
+    - name: tm_cophieuniemyetfvtplhoply_yoy
+      type: numeric
+    - name: tm_cophieuchuaniemyetfvtplhoply_yoy
+      type: numeric
+    - name: tm_chungchiquyfvtplhoply_yoy
+      type: numeric
+    - name: tm_traiphieufvtplhoply_yoy
+      type: numeric
+    - name: tm_taisantckhacfvtplhoply_yoy
+      type: numeric
+    - name: dtnhdt_yoy
+      type: numeric
+    - name: dtchovay_yoy
+      type: numeric
+    - name: dttudoanhvanguonvon_yoy
+      type: numeric
+    - name: doanhthuhoatdongmoigioick_yoy
+      type: numeric
+    - name: cpdphoannhaptstc_yoy
+      type: numeric
+    - name: cphoatdongtudoanh_yoy
+      type: numeric
+    - name: cphoatdongmoigioick_yoy
+      type: numeric
+    - name: cphoatdongbaolanhdailyphathanhck_yoy
+      type: numeric
+    - name: cphoatdongtuvandautuck_yoy
+      type: numeric
+    - name: cphoatdongdaugiauythac_yoy
+      type: numeric
+    - name: cpnghiepvuluukyck_yoy
+      type: numeric
+    - name: cphoatdongtuvantc_yoy
+      type: numeric
+    - name: cphoatdongkhac_yoy
+      type: numeric
+    - name: tonglnketoantruocthue_yoy
+      type: numeric
+    - name: lnsauthue_yoy
+      type: numeric
+    - name: laitudoanhnguonvonchovaykyquy_yoy
+      type: numeric
+    - name: lainganhangdt_yoy
+      type: numeric
+    - name: laimoigioi_yoy
+      type: numeric
+    - name: laituvantaichinh_yoy
+      type: numeric
+    - name: tm_chovaynghiepvukyquymargin_yoy
+      type: numeric
+    - name: tm_chovayungtruoctienbanckcuakhachhang_yoy
+      type: numeric
+    - name: tile_tien
+      type: numeric
+    - name: tile_fvtpl
+      type: numeric
+    - name: tile_htm
+      type: numeric
+    - name: tile_afs
+      type: numeric
+    - name: tile_chovay
+      type: numeric
+    - name: tile_phaithudichvu
+      type: numeric
+    - name: loinhuanhoatdong
+      type: numeric
+    - name: tstccuactckndt
+      type: numeric
+    - name: chiphihoatdong_yoy
+      type: numeric
+    - name: laitucackhoanchovayvaphaithu_yoy
+      type: numeric
+    - name: doanhthu_yoy
+      type: numeric
+    - name: loinhuanhoatdong_yoy
+      type: numeric
+    - name: tm_taisantcchovecuandt_yoy
+      type: numeric
+    - name: tm_taisantcchualuukytaivsdcuandt_yoy
+      type: numeric
+    - name: tstccuactckndt_yoy
+      type: numeric
+    - name: tm_taisantcdaluukyvsdchuagdcuandt_yoy
+      type: numeric
+    - name: tm_taisantcniemyetdangkygdtaivsd_yoy
+      type: numeric
+    - name: tile_phaithukhac
+      type: numeric
+    - name: tylethuesuat
+      type: numeric
+    - name: tongno_tongtaisan
+      type: numeric
+    - name: tts_vonchu
+      type: numeric
+    - name: roa
+      type: numeric
+    - name: roe
+      type: numeric
+    - name: dongtien_hdkd_lnthuan
+      type: numeric
+    - name: dongtien_hdkd_tts
+      type: numeric
+    - name: dongtien_hdkd_vcsh
+      type: numeric
+    - name: vcsh_nguonvon
+      type: numeric
+    - name: nophaitra_vcsh
+      type: numeric
+    - name: lnst_ctyme
+      type: numeric
+    - name: lnst_ctyme_yoy
+      type: numeric
+    - name: vcsh
+      type: numeric
+    - name: vcsh_yoy
+      type: numeric
+    - name: lctt_hdkd
+      type: numeric
+    - name: lctt_hddt
+      type: numeric
+    - name: lctt_hdtc
+      type: numeric
+    - name: lntt
+      type: numeric
+    - name: lntt_yoy
+      type: numeric
+    - name: nophaitra
+      type: numeric
+    - name: nophaitra_yoy
+      type: numeric
+    - name: tts
+      type: numeric
+    - name: tts_yoy
+      type: numeric
+    - name: lnst
+      type: numeric
+    - name: lnst_yoy
+      type: numeric
+    - name: chiaccotuc_tienmat
+      type: numeric
+    - name: tile_chiacotuc_cp
+      type: numeric
+    - name: tt_lnst_kehoach_yoy
+      type: numeric
+    - name: tt_lnst_lnstkehoach_yoy
+      type: numeric
+    - name: tyle_hoanthanh_dt
+      type: numeric
+    - name: tyle_hoanthanh_lnst
+      type: numeric
+    - name: vonhoa
+      type: numeric
+    - name: eps
+      type: numeric
+    - name: bookvalue
+      type: numeric
+    - name: bvps
+      type: numeric
+    - name: pe
+      type: numeric
+    - name: ep
+      type: numeric
+    - name: pb
+      type: numeric
+    - name: tang_truong_kv
+      type: numeric
+    - name: pe_dp
+      type: numeric
+    - name: peg
+      type: numeric
+    - name: peg_dc
+      type: numeric
+    - name: graham_1
+      type: numeric
+    - name: graham_2
+      type: numeric
+    - name: graham_3
+      type: numeric
+    - name: tysuatcotuc
+      type: numeric
+    - name: tl_chitracotucbangtien
+      type: numeric
+    - name: dongtien_hdkd_tmcp
+      type: numeric
+    - name: bq_tysuatcotuc
+      type: numeric
+    - name: p_ocf
+      type: numeric
+  primary:
+    - mack
+    - type
+    - quy
+    - nam

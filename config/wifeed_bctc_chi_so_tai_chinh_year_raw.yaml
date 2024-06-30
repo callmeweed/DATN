@@ -1,0 +1,92 @@
+schema:
+  table_name: wifeed_bctc_chi_so_tai_chinh_year_raw
+  columns:
+    - name: code
+      type: text
+    - name: type
+      type: text
+    - name: quy
+      type: numeric
+    - name: nam
+      type: numeric
+    - name: soluongluuhanh_q
+      type: numeric
+    - name: eps_q
+      type: numeric
+    - name: fcff_q
+      type: numeric
+    - name: bienlaigop_q
+      type: numeric
+    - name: bienlaithuan_q
+      type: numeric
+    - name: bienlaiebit_q
+      type: numeric
+    - name: bienlaitruocthue_q
+      type: numeric
+    - name: dongtien_hdkd_lnthuan_q
+      type: numeric
+    - name: nim_q
+      type: numeric
+    - name: cof_q
+      type: numeric
+    - name: yea_q
+      type: numeric
+    - name: cir_q
+      type: numeric
+    - name: tyle_baonoxau_q
+      type: numeric
+    - name: tyle_noxau_q
+      type: numeric
+    - name: laiphiphaithu_tongtaisan_q
+      type: numeric
+    - name: ldr_q
+      type: numeric
+    - name: casa_q
+      type: numeric
+    - name: noxau_q
+      type: numeric
+    - name: tienguicuakhachhang_q
+      type: numeric
+    - name: tongtaisan_q
+      type: numeric
+    - name: vonchusohuu_q
+      type: numeric
+    - name: doanhthuthuan_q
+      type: numeric
+    - name: lnstctyme_q
+      type: numeric
+    - name: phaithu_q
+      type: numeric
+    - name: tt_huydong_qoq
+      type: numeric
+    - name: tt_tindung_qoq
+      type: numeric
+    - name: tt_noxau_qoq
+      type: numeric
+    - name: tt_thunhaplaithuan_q_yoy
+      type: numeric
+    - name: tt_doanhthu_q_yoy
+      type: numeric
+    - name: tt_lairong_q_yoy
+      type: numeric
+    - name: tt_taisan_qoq
+      type: numeric
+    - name: tt_vonchu_qoq
+      type: numeric
+    - name: tt_novay_qoq
+      type: numeric
+    - name: tt_tonkho_qoq
+      type: numeric
+    - name: tt_phaithu_qoq
+      type: numeric
+    - name: ocf_q
+      type: numeric
+    - name: thunhaplaithuan_q
+      type: numeric
+    - name: tindung_q
+      type: numeric
+  primary:
+    - code
+    - type
+    - quy
+    - nam

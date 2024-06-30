@@ -1,0 +1,244 @@
+schema:
+  table_name: wifeed_bctc_chi_so_tai_chinh_doanh_nghiep_san_xuat_ttm_v2_raw
+  columns:
+    - name: mack
+      type: text
+    - name: type
+      type: text
+    - name: quy
+      type: numeric
+    - name: nam
+      type: numeric
+    - name: fcff
+      type: numeric
+    - name: fcfe
+      type: numeric
+    - name: ebit
+      type: numeric
+    - name: ebitda
+      type: numeric
+    - name: tylethuesuat
+      type: numeric
+    - name: nopat
+      type: numeric
+    - name: ccc
+      type: numeric
+    - name: bienlaigop
+      type: numeric
+    - name: bienlaisauthue
+      type: numeric
+    - name: bienlaiebit
+      type: numeric
+    - name: bienlaiebitda
+      type: numeric
+    - name: bienlaitruocthue
+      type: numeric
+    - name: vongquaytaisan
+      type: numeric
+    - name: vongquayphaithu
+      type: numeric
+    - name: vongquaytonkho
+      type: numeric
+    - name: vongquayphaitra
+      type: numeric
+    - name: roa
+      type: numeric
+    - name: roe
+      type: numeric
+    - name: roic
+      type: numeric
+    - name: dongtien_hdkd_lnthuan
+      type: numeric
+    - name: dongtien_hdkd_dtt
+      type: numeric
+    - name: dongtien_hdkd_tts
+      type: numeric
+    - name: dongtien_hdkd_vcsh
+      type: numeric
+    - name: khtscd
+      type: numeric
+    - name: capex
+      type: numeric
+    - name: tt_dtt_yoy
+      type: numeric
+    - name: tt_lng_yoy
+      type: numeric
+    - name: tt_ebit_yoy
+      type: numeric
+    - name: tt_ebitda_yoy
+      type: numeric
+    - name: tt_lntt_yoy
+      type: numeric
+    - name: tt_lnst_yoy
+      type: numeric
+    - name: lnst_yoy
+      type: numeric
+    - name: ln_hdkd_yoy
+      type: numeric
+    - name: ln_hdtc_yoy
+      type: numeric
+    - name: ln_ldlk_yoy
+      type: numeric
+    - name: ln_khac_yoy
+      type: numeric
+    - name: cpgiavon_yoy
+      type: numeric
+    - name: cptaichinh_yoy
+      type: numeric
+    - name: cpbh_yoy
+      type: numeric
+    - name: cpqldn_yoy
+      type: numeric
+    - name: lctt_hdkd_yoy
+      type: numeric
+    - name: lctt_hddt_yoy
+      type: numeric
+    - name: lctt_hdtc_yoy
+      type: numeric
+    - name: lctt_trongky_yoy
+      type: numeric
+    - name: khauhao_tscd_yoy
+      type: numeric
+    - name: capex_yoy
+      type: numeric
+    - name: dtt_qoq
+      type: numeric
+    - name: ln_gop_qoq
+      type: numeric
+    - name: ebit_qoq
+      type: numeric
+    - name: ebitda_qoq
+      type: numeric
+    - name: lntt_qoq
+      type: numeric
+    - name: lnst_ctyme_qoq
+      type: numeric
+    - name: lnst_qoq
+      type: numeric
+    - name: ln_hdkd_qoq
+      type: numeric
+    - name: ln_hdtc_qoq
+      type: numeric
+    - name: ln_ldlk_qoq
+      type: numeric
+    - name: ln_khac_qoq
+      type: numeric
+    - name: cpgiavon_qoq
+      type: numeric
+    - name: cptaichinh_qoq
+      type: numeric
+    - name: cpbanhang_qoq
+      type: numeric
+    - name: cpquanlydn_qoq
+      type: numeric
+    - name: lctt_hdkd_qoq
+      type: numeric
+    - name: lctt_hddt_qoq
+      type: numeric
+    - name: lctt_hdtc_qoq
+      type: numeric
+    - name: lctt_trongky_qoq
+      type: numeric
+    - name: khauhao_tscd_qoq
+      type: numeric
+    - name: capex_qoq
+      type: numeric
+    - name: dol
+      type: numeric
+    - name: dfl
+      type: numeric
+    - name: dtl
+      type: numeric
+    - name: ls_novay
+      type: numeric
+    - name: novay_ebitda
+      type: numeric
+    - name: novay_dongtienhdkd
+      type: numeric
+    - name: ebit_laivay
+      type: numeric
+    - name: dongtien_hdkd_novay
+      type: numeric
+    - name: dongtien_hdkd_laivay
+      type: numeric
+    - name: tile_chiphigiavon
+      type: numeric
+    - name: tile_chiphilaivay
+      type: numeric
+    - name: tile_chiphibanhang
+      type: numeric
+    - name: tile_chiphiquanly
+      type: numeric
+    - name: tile_loinhuanhoatdongkinhdoanhchinh
+      type: numeric
+    - name: tile_loinhuantaichinh
+      type: numeric
+    - name: tile_lailoldlk
+      type: numeric
+    - name: tile_loinhuankhac
+      type: numeric
+    - name: p_fcff
+      type: numeric
+    - name: p_fcfe
+      type: numeric
+    - name: lng_tmcp
+      type: numeric
+    - name: p_gp
+      type: numeric
+    - name: ev_ocf
+      type: numeric
+    - name: ev_ebit
+      type: numeric
+    - name: ev_ebitda
+      type: numeric
+    - name: ev_fcff
+      type: numeric
+    - name: ps
+      type: numeric
+    - name: rev_per_share
+      type: numeric
+    - name: lnst_ctyme
+      type: numeric
+    - name: lnst_ctyme_yoy
+      type: numeric
+    - name: lctt_hdkd
+      type: numeric
+    - name: lctt_hddt
+      type: numeric
+    - name: lctt_hdtc
+      type: numeric
+    - name: lntt
+      type: numeric
+    - name: lntt_yoy
+      type: numeric
+    - name: lnst
+      type: numeric
+    - name: eps
+      type: numeric
+    - name: pe
+      type: numeric
+    - name: ep
+      type: numeric
+    - name: pe_dp
+      type: numeric
+    - name: peg
+      type: numeric
+    - name: peg_dc
+      type: numeric
+    - name: graham_1
+      type: numeric
+    - name: graham_2
+      type: numeric
+    - name: graham_3
+      type: numeric
+    - name: tl_chitracotucbangtien
+      type: numeric
+    - name: dongtien_hdkd_tmcp
+      type: numeric
+    - name: p_ocf
+      type: numeric
+  primary:
+    - mack
+    - type
+    - quy
+    - nam

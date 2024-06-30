@@ -1,0 +1,254 @@
+version: 2
+
+models:
+  - name: stg_public__wifeed_bctc_ttcb_doanh_nghiep_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "crawled_date"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "ten"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "loai_hinh_cong_ty"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "san_niem_yet"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "gioithieu"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "diachi"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "website"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nganhcap1"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nganhcap2"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nganhcap3"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nganhcap4"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "ngayniemyet"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "smg"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "volume_daily"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "vol_tb_15ngay"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "vonhoa"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "dif"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "dif_percent"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "tong_tai_san"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "soluongluuhanh"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "soluongniemyet"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "cophieuquy"
+  - name: stg_public__wifeed_bctc_cstc_ttm_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "code"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_quarter_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "code"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_year_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "code"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+
+  - name: stg_public__wifeed_bctc_kqkd_bao_hiem_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "code"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam" 
+  - name: stg_public__wifeed_bctc_kqkd_chung_khoan_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "code"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam" 
+  - name: stg_public__wifeed_bctc_kqkd_dnsx_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "code"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam" 
+  - name: stg_public__wifeed_bctc_kqkd_ngan_hang_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "code"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  
+  - name: stg_public__wifeed_bctc_cstc_bao_hiem_quarter_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_bao_hiem_ttm_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_bao_hiem_year_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_chung_khoan_quarter_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_chung_khoan_ttm_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_chung_khoan_year_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_ngan_hang_quarter_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_ngan_hang_ttm_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_ngan_hang_year_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_dnsx_quarter_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_dnsx_ttm_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_bctc_cstc_dnsx_year_v2_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "mack"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "type"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "quy"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "nam"
+  - name: stg_public__wifeed_danh_sach_ma_chung_khoan_raw
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "san"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "code"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "loaidn"
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: "fullname_vi"
+

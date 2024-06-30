@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: market
+    description: A replica of the Postgres database used as the backend of timescaledb
+    schema: market
+    tables:
+      - name: stock_ohlc_days
+        description: Mỗi dòng là 1 record về giá open, close, high, low và khối lượng giao dịch của 1 mã chứng khoán mỗi ngày

@@ -1,0 +1,454 @@
+schema:
+  table_name: wifeed_bctc_chi_so_tai_chinh_doanh_nghiep_san_xuat_quarter_v2_raw
+  columns:
+    - name: mack
+      type: text
+    - name: type
+      type: text
+    - name: quy
+      type: numeric
+    - name: nam
+      type: numeric
+    - name: tsck_nophaitra
+      type: numeric
+    - name: nodaihan_qoq
+      type: numeric
+    - name: duphonggiamgiackkd
+      type: numeric
+    - name: nwc
+      type: numeric
+    - name: ebit
+      type: numeric
+    - name: ebitda
+      type: numeric
+    - name: tylethuesuat
+      type: numeric
+    - name: nopat
+      type: numeric
+    - name: bienlaigop
+      type: numeric
+    - name: bienlaisauthue
+      type: numeric
+    - name: bienlaiebit
+      type: numeric
+    - name: bienlaiebitda
+      type: numeric
+    - name: bienlaitruocthue
+      type: numeric
+    - name: khauhao_tscd
+      type: numeric
+    - name: khtscd
+      type: numeric
+    - name: capex
+      type: numeric
+    - name: tile_tsdd_nguyengiatscd
+      type: numeric
+    - name: duphongphaithu_phaithu_dn
+      type: numeric
+    - name: tile_duphong_gghtk
+      type: numeric
+    - name: tile_duphong_dttc_daihan
+      type: numeric
+    - name: vldr
+      type: numeric
+    - name: vldr_nwc
+      type: numeric
+    - name: vldr_tsnh
+      type: numeric
+    - name: vldr_tsdh
+      type: numeric
+    - name: tt_dtt_yoy
+      type: numeric
+    - name: tt_lng_yoy
+      type: numeric
+    - name: tt_ebit_yoy
+      type: numeric
+    - name: tt_ebitda_yoy
+      type: numeric
+    - name: tt_lntt_yoy
+      type: numeric
+    - name: tt_lnst_yoy
+      type: numeric
+    - name: lnst_yoy
+      type: numeric
+    - name: ln_hdkd_yoy
+      type: numeric
+    - name: ln_hdtc_yoy
+      type: numeric
+    - name: ln_ldlk_yoy
+      type: numeric
+    - name: ln_khac_yoy
+      type: numeric
+    - name: cpgiavon_yoy
+      type: numeric
+    - name: cptaichinh_yoy
+      type: numeric
+    - name: cpbh_yoy
+      type: numeric
+    - name: cpqldn_yoy
+      type: numeric
+    - name: tt_tts
+      type: numeric
+    - name: tt_tsnh
+      type: numeric
+    - name: tt_tsdh
+      type: numeric
+    - name: ttdt_yoy
+      type: numeric
+    - name: tvtgnh_yoy
+      type: numeric
+    - name: ckkd_yoy
+      type: numeric
+    - name: dttc_nganhan_yoy
+      type: numeric
+    - name: dttc_daihan_yoy
+      type: numeric
+    - name: cackhoanphaithu_yoy
+      type: numeric
+    - name: htk_yoy
+      type: numeric
+    - name: tscd_yoy
+      type: numeric
+    - name: haomonluyke_yoy
+      type: numeric
+    - name: bdsdautu_yoy
+      type: numeric
+    - name: loithethuongmai_yoy
+      type: numeric
+    - name: duphong_phaithu_yoy
+      type: numeric
+    - name: tsdd_daihan_yoy
+      type: numeric
+    - name: tscd_vohinh_yoy
+      type: numeric
+    - name: duphong_giamgiackkd_yoy
+      type: numeric
+    - name: duphong_giamgiahtk_yoy
+      type: numeric
+    - name: duphong_dttc_daihan_yoy
+      type: numeric
+    - name: tt_no
+      type: numeric
+    - name: tt_nnh
+      type: numeric
+    - name: tt_ndh
+      type: numeric
+    - name: tt_vcsh
+      type: numeric
+    - name: nguoimuatratruoc_yoy
+      type: numeric
+    - name: phaitranguoiban_yoy
+      type: numeric
+    - name: dt_chuathuchien_yoy
+      type: numeric
+    - name: novay_yoy
+      type: numeric
+    - name: nochiemdung_yoy
+      type: numeric
+    - name: thangduvon_yoy
+      type: numeric
+    - name: cpquy_yoy
+      type: numeric
+    - name: ln_chuaphanphoi_yoy
+      type: numeric
+    - name: lctt_hdkd_yoy
+      type: numeric
+    - name: lctt_hddt_yoy
+      type: numeric
+    - name: lctt_hdtc_yoy
+      type: numeric
+    - name: lctt_trongky_yoy
+      type: numeric
+    - name: khauhao_tscd_yoy
+      type: numeric
+    - name: capex_yoy
+      type: numeric
+    - name: dtt_qoq
+      type: numeric
+    - name: ln_gop_qoq
+      type: numeric
+    - name: ebit_qoq
+      type: numeric
+    - name: ebitda_qoq
+      type: numeric
+    - name: lntt_qoq
+      type: numeric
+    - name: lnst_ctyme_qoq
+      type: numeric
+    - name: lnst_qoq
+      type: numeric
+    - name: ln_hdkd_qoq
+      type: numeric
+    - name: ln_hdtc_qoq
+      type: numeric
+    - name: ln_ldlk_qoq
+      type: numeric
+    - name: ln_khac_qoq
+      type: numeric
+    - name: cpgiavon_qoq
+      type: numeric
+    - name: cptaichinh_qoq
+      type: numeric
+    - name: cpbanhang_qoq
+      type: numeric
+    - name: cpquanlydn_qoq
+      type: numeric
+    - name: tongtaisan_qoq
+      type: numeric
+    - name: tsnganhan_qoq
+      type: numeric
+    - name: tsdaihan_qoq
+      type: numeric
+    - name: ttdt_qoq
+      type: numeric
+    - name: tvtgnh_qoq
+      type: numeric
+    - name: ckkd_qoq
+      type: numeric
+    - name: dttc_nganhan_qoq
+      type: numeric
+    - name: dttc_daihan_qoq
+      type: numeric
+    - name: cackhoanphaithu_qoq
+      type: numeric
+    - name: htk_qoq
+      type: numeric
+    - name: tscd_qoq
+      type: numeric
+    - name: haomonluyke_qoq
+      type: numeric
+    - name: bdsdautu_qoq
+      type: numeric
+    - name: loithethuongmai_qoq
+      type: numeric
+    - name: duphong_phaithu_qoq
+      type: numeric
+    - name: tsdd_daihan_qoq
+      type: numeric
+    - name: tscd_vohinh_qoq
+      type: numeric
+    - name: duphong_giamgiackkd_qoq
+      type: numeric
+    - name: duphong_giamgiahtk_qoq
+      type: numeric
+    - name: duphong_dttc_daihan_qoq
+      type: numeric
+    - name: tongno_qoq
+      type: numeric
+    - name: nonganhan_qoq
+      type: numeric
+    - name: vonchusohuu_qoq
+      type: numeric
+    - name: nguoimuatratruoc_qoq
+      type: numeric
+    - name: phaitranguoiban_qoq
+      type: numeric
+    - name: dt_chuathuchien_qoq
+      type: numeric
+    - name: novay_qoq
+      type: numeric
+    - name: nochiemdung_qoq
+      type: numeric
+    - name: thangduvon_qoq
+      type: numeric
+    - name: cpquy_qoq
+      type: numeric
+    - name: lnst_chuaphanphoi_qoq
+      type: numeric
+    - name: lctt_hdkd_qoq
+      type: numeric
+    - name: lctt_hddt_qoq
+      type: numeric
+    - name: lctt_hdtc_qoq
+      type: numeric
+    - name: lctt_trongky_qoq
+      type: numeric
+    - name: khauhao_tscd_qoq
+      type: numeric
+    - name: capex_qoq
+      type: numeric
+    - name: dol
+      type: numeric
+    - name: dfl
+      type: numeric
+    - name: dtl
+      type: numeric
+    - name: tongno_tongtaisan
+      type: numeric
+    - name: congnonganhan_tongtaisan
+      type: numeric
+    - name: congnodaihan_tongtaisan
+      type: numeric
+    - name: tts_vonchu
+      type: numeric
+    - name: novay_tts
+      type: numeric
+    - name: novay_vonchu
+      type: numeric
+    - name: novayrong_vonchu
+      type: numeric
+    - name: thanhtoan_hienhanh
+      type: numeric
+    - name: thanhtoan_nhanh
+      type: numeric
+    - name: thanhtoan_tienmat
+      type: numeric
+    - name: tile_chiphigiavon
+      type: numeric
+    - name: tile_chiphilaivay
+      type: numeric
+    - name: tile_chiphibanhang
+      type: numeric
+    - name: tile_chiphiquanly
+      type: numeric
+    - name: tile_hangmuadiduong
+      type: numeric
+    - name: tile_nguyenvatlieu
+      type: numeric
+    - name: tile_congcudungcu
+      type: numeric
+    - name: tile_chiphisanxuat
+      type: numeric
+    - name: tile_thanhpham
+      type: numeric
+    - name: tile_hanghoa
+      type: numeric
+    - name: tile_hangguidiban
+      type: numeric
+    - name: tile_hangtonkhokhac
+      type: numeric
+    - name: tile_hanghoabds
+      type: numeric
+    - name: tile_loinhuanhoatdongkinhdoanhchinh
+      type: numeric
+    - name: tile_loinhuantaichinh
+      type: numeric
+    - name: tile_lailoldlk
+      type: numeric
+    - name: tile_loinhuankhac
+      type: numeric
+    - name: tongno_tts_nam
+      type: numeric
+    - name: congnonganhan_tts_nam
+      type: numeric
+    - name: congnodaihan_tts_nam
+      type: numeric
+    - name: tile_nguoimuatratruoc_nv
+      type: numeric
+    - name: tile_phaitranguoiban_nv
+      type: numeric
+    - name: tile_doanhthuchuathuchien_nv
+      type: numeric
+    - name: tile_novay_nv
+      type: numeric
+    - name: tile_nochiemdung_nv
+      type: numeric
+    - name: tile_thangduvon_nv
+      type: numeric
+    - name: tile_cophieuquy_nv
+      type: numeric
+    - name: tile_loinhuanchuaphanpho_nv
+      type: numeric
+    - name: tsnh_tts_dn
+      type: numeric
+    - name: tvtd_tts_dn
+      type: numeric
+    - name: tgnh_tts_dn
+      type: numeric
+    - name: tile_ckkd
+      type: numeric
+    - name: dttcnh_tts_dn
+      type: numeric
+    - name: dttcdh_tts_dn
+      type: numeric
+    - name: dttc_tts_dn
+      type: numeric
+    - name: ckpt_tts_dn
+      type: numeric
+    - name: htk_tts_dn
+      type: numeric
+    - name: tscd_tts_dn
+      type: numeric
+    - name: bdsdt_tts
+      type: numeric
+    - name: lttm_tts
+      type: numeric
+    - name: tile_tsdd_daihan
+      type: numeric
+    - name: tile_tscd_vohinh
+      type: numeric
+    - name: ncav
+      type: numeric
+    - name: ncav_ps
+      type: numeric
+    - name: netcash
+      type: numeric
+    - name: netcash_ps
+      type: numeric
+    - name: p_ncav
+      type: numeric
+    - name: p_ncp
+      type: numeric
+    - name: p_lnw
+      type: numeric
+    - name: lnwpershare
+      type: numeric
+    - name: nc_vh
+      type: numeric
+    - name: lnw_vh
+      type: numeric
+    - name: ev
+      type: numeric
+    - name: vldr_vh
+      type: numeric
+    - name: vcsh_nguonvon
+      type: numeric
+    - name: nophaitra_vcsh
+      type: numeric
+    - name: lnst_ctyme
+      type: numeric
+    - name: lnst_ctyme_yoy
+      type: numeric
+    - name: vcsh
+      type: numeric
+    - name: vcsh_yoy
+      type: numeric
+    - name: vcsh_qoq
+      type: numeric
+    - name: lctt_hdkd
+      type: numeric
+    - name: lctt_hddt
+      type: numeric
+    - name: lctt_hdtc
+      type: numeric
+    - name: lntt
+      type: numeric
+    - name: lntt_yoy
+      type: numeric
+    - name: nophaitra
+      type: numeric
+    - name: nophaitra_yoy
+      type: numeric
+    - name: nophaitra_qoq
+      type: numeric
+    - name: tts
+      type: numeric
+    - name: tts_yoy
+      type: numeric
+    - name: tts_qoq
+      type: numeric
+    - name: lnst
+      type: numeric
+    - name: vonhoa
+      type: numeric
+    - name: bookvalue
+      type: numeric
+    - name: bvps
+      type: numeric
+    - name: pb
+      type: numeric
+  primary:
+    - mack
+    - type
+    - quy
+    - nam

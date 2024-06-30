@@ -1,0 +1,61 @@
+schema:
+  table_name: wifeed_bctc_ttcb_doanh_nghiep_v2_raw
+  columns:
+    - name: mack
+      type: text
+    - name: ten
+      type: text
+    - name: loai_hinh_cong_ty
+      type: text
+    - name: san_niem_yet
+      type: text
+    - name: gioithieu
+      type: text
+    - name: ghichu
+      type: text
+    - name: diachi
+      type: text
+    - name: website
+      type: text
+    - name: nganhcap1
+      type: text
+    - name: nganhcap2
+      type: text
+    - name: nganhcap3
+      type: text
+    - name: nganhcap4
+      type: text
+    - name: ngayniemyet
+      type: timestamp
+    - name: smg
+      type: numeric
+    - name: volume_daily
+      type: numeric
+    - name: vol_tb_15ngay
+      type: numeric
+    - name: vonhoa
+      type: numeric
+    - name: dif
+      type: numeric
+    - name: dif_percent
+      type: numeric
+    - name: tong_tai_san
+      type: numeric
+    - name: soluongluuhanh
+      type: numeric
+    - name: soluongniemyet
+      type: numeric
+    - name: cophieuquy
+      type: numeric
+    - name: logo
+      type: text
+    - name: logo_dnse_cdn
+      type: text
+    - name: created_at
+      type: timestamp
+    - name: updated_at
+      type: timestamp
+    - name: crawled_date
+      type: timestamp
+  primary:
+    - mack

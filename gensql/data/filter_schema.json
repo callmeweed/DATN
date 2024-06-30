@@ -1,0 +1,478 @@
+{
+    "fact_symbol_chi_so_tang_truong_yearly": {
+        "dbname": "dsai",
+        "schema": "public_market",
+        "description": "Chỉ số tăng trưởng doanh thu, lợi nhuận, EPS của các mã chứng khoán, công ty trong khung thời gian: năm",
+        "other": null,
+        "fields": [
+            {
+                "field": "unique_id",
+                "explanation": "Unique ID",
+                "key": null,
+                "type": "varchar(32)",
+                "default": 1
+            },
+            {
+                "field": "year_number",
+                "explanation": "Năm, Year, ví dụ: 2022, 2023,...",
+                "key": null,
+                "type": "integer",
+                "default": 1
+            },
+            {
+                "field": "symbol",
+                "explanation": "Mã chứng khoán, công ty, doanh nghiệp, tập đoàn, ví dụ: HPG, vic, vcb,...",
+                "key": "distkey",
+                "type": "varchar(65535)",
+                "default": 1
+            },
+            {
+                "field": "doanh_thu",
+                "explanation": "Doanh thu của năm hiện tại, ví dụ: 1,387,889,621,413 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "doanh_thu_1_y_ago",
+                "explanation": "Doanh thu của 1 năm trước, ví dụ: 1,525,530,077,939 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "doanh_thu_5_y_ago",
+                "explanation": "Doanh thu của 5 năm trước, ví dụ: 4,236,069,360,770 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "ty_le_tang_truong_doanh_thu_1_y",
+                "explanation": "Tỷ lệ tăng trưởng doanh thu so với 1 năm trước, ví dụ: -0.09",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "ty_le_tang_truong_doanh_thu_5_y",
+                "explanation": "Tỷ lệ tăng trưởng doanh thu so với 5 năm trước, ví dụ: -0.67",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "loi_nhuan",
+                "explanation": "Lợi nhuận của năm hiện tại, ví dụ: 777,715,501,651 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "loi_nhuan_1_y_ago",
+                "explanation": "Lợi nhuận của 1 năm trước, ví dụ: -586,950,615,410 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "loi_nhuan_5_y_ago",
+                "explanation": "Lợi nhuận của 5 năm trước, ví dụ: 316,664,795,156 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "ty_le_tang_truong_loi_nhuan_1_y",
+                "explanation": "Tỷ lệ tăng trưởng lợi nhuận so với 1 năm trước, ví dụ: 2.33",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "ty_le_tang_truong_loi_nhuan_5_y",
+                "explanation": "Tỷ lệ tăng trưởng lợi nhuận so với 5 năm trước, ví dụ: 1.46",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "eps",
+                "explanation": "eps (lợi nhuận sau thuế phân bổ trên một cổ phiếu) của năm hiện tại, ví dụ: 38,143.88 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "eps_1_y_ago",
+                "explanation": "eps (lợi nhuận sau thuế phân bổ trên một cổ phiếu) của 1 năm trước, ví dụ: -28,787.61 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "eps_5_y_ago",
+                "explanation": "eps (lợi nhuận sau thuế phân bổ trên một cổ phiếu) của 5 năm trước, ví dụ: 15,531.16 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "ty_le_tang_truong_eps_1_y",
+                "explanation": "Tỷ lệ tăng trưởng eps (lợi nhuận sau thuế phân bổ trên một cổ phiếu) so với 1 năm trước, ví dụ: 2.33",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "ty_le_tang_truong_eps_5_y",
+                "explanation": "Tỷ lệ tăng trưởng eps (lợi nhuận sau thuế phân bổ trên một cổ phiếu) so với 5 năm trước, ví dụ: 1.46",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            }
+        ]
+    },
+    "fact_symbol_chi_so_tang_truong_quarterly": {
+        "dbname": "dsai",
+        "schema": "public_market",
+        "description": "Chỉ số tăng trưởng doanh thu, lợi nhuận của các mã chứng khoán, công ty trong khung thời gian: quý",
+        "other": null,
+        "fields": [
+            {
+                "field": "unique_id",
+                "explanation": "Unique ID",
+                "key": null,
+                "type": "varchar(32)",
+                "default": 1
+            },
+            {
+                "field": "qtr_number",
+                "explanation": "Quý - một năm có 4 quý, ví dụ: 1, 2, 3, 4",
+                "key": null,
+                "type": "integer",
+                "default": 1
+            },
+            {
+                "field": "year_number",
+                "explanation": "Năm, Year, ví dụ: 2022, 2023,...",
+                "key": null,
+                "type": "integer",
+                "default": 1
+            },
+            {
+                "field": "quarter_year_name",
+                "explanation": "Quý và năm, ví dụ: Q4-2023",
+                "key": null,
+                "type": "varchar(24)",
+                "default": 1
+            },
+            {
+                "field": "symbol",
+                "explanation": "Mã chứng khoán, công ty, doanh nghiệp, tập đoàn, ví dụ: HPG, vic, vcb,...",
+                "key": "distkey",
+                "type": "varchar(65535)",
+                "default": 1
+            },
+            {
+                "field": "doanh_thu",
+                "explanation": "Doanh thu của quý hiện tại, ví dụ: 37,789,285,456 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "doanh_thu_1_qtr_ago",
+                "explanation": "Doanh thu của 1 quý trước, ví dụ: 28,192,341,773 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "doanh_thu_2_qtr_ago",
+                "explanation": "Doanh thu của 2 quý trước, ví dụ: 40,458,798,621 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "ty_le_tang_truong_doanh_thu_1_qtr",
+                "explanation": "Tỷ lệ tăng trưởng doanh thu so với 1 quý trước, ví dụ: 0.34",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "ty_le_tang_truong_doanh_thu_2_qtr",
+                "explanation": "Tỷ lệ tăng trưởng doanh thu so với 2 quý trước, ví dụ: -0.066",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "loi_nhuan",
+                "explanation": "Lợi nhuận của quý hiện tại, ví dụ: -380,909,725 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "loi_nhuan_1_qtr_ago",
+                "explanation": "Lợi nhuận của 1 quý trước, ví dụ: -1,013,131,691 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "loi_nhuan_2_qtr_ago",
+                "explanation": "Lợi nhuận của 2 quý trước, ví dụ: 863,924,041 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "ty_le_tang_truong_loi_nhuan_1_qtr",
+                "explanation": "Tỷ lệ tăng trưởng lợi nhuận so với 1 quý trước, ví dụ: 0.62",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "ty_le_tang_truong_loi_nhuan_2_qtr",
+                "explanation": "Tỷ lệ tăng trưởng lợi nhuận so với 2 quý trước, ví dụ: -1.44",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            }
+        ]
+    },
+    "calculate_filter_bien_dong_gia_va_khoi_luong_daily_1d0h0m_1": {
+        "schema": "public",
+        "dbname": "dsai",
+        "description": "Thông tin về biến động về giá đóng cửa và khối lượng giao dịch chứng khoán theo ngày, một dòng là thông tin của 1 mã trong 1 ngày",
+        "other": null,
+        "fields": [
+            {
+                "field": "symbol",
+                "explanation": "Mã chứng khoán, công ty, doanh nghiệp, tập đoàn, ví dụ: HPG, VIC, VCB,...",
+                "key": "primary key",
+                "type": "varchar(20)",
+                "default": 1
+            },
+            {
+                "field": "trading_time",
+                "explanation": "Ngày giao dịch, phiên giao dịch của mã chứng khoán, ví dụ: 2024-06-03",
+                "key": "primary key",
+                "type": "timestamp",
+                "default": 1
+            },
+            {
+                "field": "accumulated_val",
+                "explanation": "tổng giá trị khớp lệnh trong phiên, ngày, ví dụ: 4.02 (đơn vị: tỷ đồng)",
+                "key": null,
+                "type": "numeric",
+                "default": 0
+            },
+            {
+                "field": "accumulated_val_1w",
+                "explanation": "giá trị giao dịch trung bình 5 phiên/ngày gần nhất, giá trị giao dịch trung bình trong tuần vừa rồi, ví dụ: 7.51 (đơn vị: tỷ đồng)",
+                "key": null,
+                "type": "numeric",
+                "default": 0
+            },
+            {
+                "field": "accumulated_val_2w",
+                "explanation": "giá trị giao dịch trung bình 10 phiên/ngày gần nhất, giá trị giao dịch trung bình trong 2 tuần vừa rồi, ví dụ: 9.32 (đơn vị: tỷ đồng)",
+                "key": null,
+                "type": "numeric",
+                "default": 0
+            },
+            {
+                "field": "accumulated_val_1m",
+                "explanation": "giá trị giao dịch trung bình 20 phiên/ngày gần nhất, giá trị giao dịch trung bình trong tháng vừa rồi, ví dụ: 6.86 (đơn vị: tỷ đồng)",
+                "key": null,
+                "type": "numeric",
+                "default": 0
+            },
+            {
+                "field": "close_price",
+                "explanation": "Giá đóng cửa (giá cuối ngày) tại của 1 ngày giao dịch, ví dụ: 7.88 (đơn vị: nghìn đồng)",
+                "key": null,
+                "type": "numeric",
+                "default": 1
+            },
+            {
+                "field": "sma_5",
+                "explanation": "Giá trị đường trung bình động đơn giản hay Trung bình giá đóng cửa - giá cuối ngày (SMA hay sma) khung 5 ngày, ví dụ: 8.02 (đơn vị: nghìn đồng)",
+                "key": null,
+                "type": "numeric",
+                "default": 0
+            },
+            {
+                "field": "sma_10",
+                "explanation": "Giá trị đường trung bình động đơn giản hay Trung bình giá đóng cửa - giá cuối ngày (SMA hay sma) khung 10 ngày, ví dụ: 7.97 (đơn vị: nghìn đồng)",
+                "key": null,
+                "type": "numeric",
+                "default": 0
+            },
+            {
+                "field": "sma_20",
+                "explanation": "Giá trị đường trung bình động đơn giản hay Trung bình giá đóng cửa - giá cuối ngày (SMA hay sma) khung 20 ngày, ví dụ: 7.78 (đơn vị: nghìn đồng)",
+                "key": null,
+                "type": "numeric",
+                "default": 0
+            },
+            {
+                "field": "sma_50",
+                "explanation": "Giá trị đường trung bình động đơn giản hay Trung bình giá đóng cửa - giá cuối ngày (SMA hay sma) khung 50 ngày, ví dụ: 8.48 (đơn vị: nghìn đồng)",
+                "key": null,
+                "type": "numeric",
+                "default": 0
+            },
+            {
+                "field": "sma_100",
+                "explanation": "Giá trị đường trung bình động đơn giản hay Trung bình giá đóng cửa - giá cuối ngày (SMA hay sma) khung 100 ngày, ví dụ: 9.33 (đơn vị: nghìn đồng)",
+                "key": null,
+                "type": "numeric",
+                "default": 0
+            }
+        ]
+    },
+    "fact_symbol_thong_tin_co_ban": {
+        "dbname": "dsai",
+        "schema": "public_market",
+        "description": "Vốn hoá, tổng tài sản, sức mạnh giá, smg của các mã chứng khoán, công ty",
+        "other": null,
+        "fields": [
+            {
+                "field": "symbol",
+                "explanation": "Mã chứng khoán, công ty, doanh nghiệp, tập đoàn, ví dụ: HPG, vic, vcb,...",
+                "key": "distkey",
+                "type": "varchar(65535)",
+                "default": 1
+            },
+            {
+                "field": "vonhoa",
+                "explanation": "Vốn hoá của công ty, mã chứng khoán, doanh nghiệp, tập đoàn, ví dụ: 1,387,889,621,413 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "tong_tai_san",
+                "explanation": "Tổng tài sản của công ty, mã chứng khoán, doanh nghiệp, tập đoàn, ví dụ: 1,387,889,621,413 (đơn vị: đồng)",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "smg",
+                "explanation": "Sức mạnh giá của công ty, mã chứng khoán, doanh nghiệp, tập đoàn.",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            }
+        ]
+    },
+    "fact_symbol_cstc_yearly": {
+        "dbname": "dsai",
+        "schema": "public_market",
+        "description": "Biên lãi gộp, roe, eps, pe, pb, ev/ebitda của các mã chứng khoán, công ty trong khung thời gian: năm",
+        "other": null,
+        "fields": [
+            {
+                "field": "mack",
+                "explanation": "Mã chứng khoán, công ty, doanh nghiệp, tập đoàn, ví dụ: HPG, vic, vcb,...",
+                "key": "distkey",
+                "type": "varchar(65535)",
+                "default": 1
+            },
+            {
+                "field": "nam",
+                "explanation": "Năm, Year, ví dụ: 2022, 2023,...",
+                "key": null,
+                "type": "integer",
+                "default": 1
+            },
+            {
+                "field": "bienlaigop",
+                "explanation": "Biên lãi gộp của công ty, mã chứng khoán, doanh nghiệp, tập đoàn",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "roe",
+                "explanation": "ROE của công ty, mã chứng khoán, doanh nghiệp, tập đoàn",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "eps",
+                "explanation": "EPS của công ty, mã chứng khoán, doanh nghiệp, tập đoàn.",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "pe",
+                "explanation": "PE của công ty, mã chứng khoán, doanh nghiệp, tập đoàn.",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "pb",
+                "explanation": "PB của công ty, mã chứng khoán, doanh nghiệp, tập đoàn.",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            }
+        ]
+    },
+    "indicator_signal_1d0h0m_1": {
+        "dbname": "dsai",
+        "schema": "public",
+        "description": "Tín hiệu kĩ thuật RSI, MACD, Vượt đỉnh 52 tuần, phá đáy 52 tuần của các mã chứng khoán, công ty trong khung thời gian: ngày",
+        "other": null,
+        "fields": [
+            {
+                "field": "symbol_",
+                "explanation": "Mã chứng khoán, công ty, doanh nghiệp, tập đoàn, ví dụ: HPG, vic, vcb,...",
+                "key": "distkey",
+                "type": "varchar(65535)",
+                "default": 1
+            },
+            {
+                "field": "rsi",
+                "explanation": "RSI của công ty, mã chứng khoán, doanh nghiệp, tập đoàn",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "macd",
+                "explanation": "MACD của công ty, mã chứng khoán, doanh nghiệp, tập đoàn",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "rsi_tag",
+                "explanation": "Tín hiệu kỹ thuật đưa ra từ chỉ số RSI của công ty, mã chứng khoán, doanh nghiệp, tập đoàn. ví dụ: mua, bán, trung tính",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            },
+            {
+                "field": "macd_tag",
+                "explanation": "Tín hiệu kỹ thuật đưa ra từ chỉ số MACD của công ty, mã chứng khoán, doanh nghiệp, tập đoàn. ví dụ: mua, bán, trung tính",
+                "key": null,
+                "type": "double precision",
+                "default": 0
+            }
+        ]
+    }
+
+}

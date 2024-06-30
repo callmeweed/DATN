@@ -1,0 +1,150 @@
+schema:
+  table_name: wifeed_bctc_ket_qua_kinh_doanh_bao_hiem_raw
+  columns:
+    - name: code
+      type: text
+    - name: type
+      type: text
+    - name: quy
+      type: numeric
+    - name: nam
+      type: numeric
+    - name: donvikiemtoan
+      type: text
+    - name: ykienkiemtoan
+      type: text
+    - name: doanhthuphibaohiem
+      type: numeric
+    - name: phibaohiemgoc
+      type: numeric
+    - name: phinhantaibaohiem
+      type: numeric
+    - name: tgduphongphibaohiemgoc
+      type: numeric
+    - name: phinhuongtaibaohiem
+      type: numeric
+    - name: tongphinhuongtaibaohiem
+      type: numeric
+    - name: tgduphongphinhuongtaibaohiem
+      type: numeric
+    - name: cackhoangiamtrukhac
+      type: numeric
+    - name: doanhthuphibaohiemthuan
+      type: numeric
+    - name: hoahongnhuongtaibaohiem
+      type: numeric
+    - name: thuhoahongnhuongtaibaohiem
+      type: numeric
+    - name: thukhachdkdbaohiem
+      type: numeric
+    - name: doanhthuthuan
+      type: numeric
+    - name: chiboithuong
+      type: numeric
+    - name: tongchiboithuong
+      type: numeric
+    - name: chiboithuongbaohiemgoc
+      type: numeric
+    - name: chiboithuongnhantaibaohiem
+      type: numeric
+    - name: chiboithuongkhac
+      type: numeric
+    - name: cackhoangiamtru
+      type: numeric
+    - name: thudoinguoithuba
+      type: numeric
+    - name: thuhangdaxulyboithuong100
+      type: numeric
+    - name: cackhoangiamtrukhac_chibt
+      type: numeric
+    - name: thuboithuongnhuongtaibaohiem
+      type: numeric
+    - name: tangduphongnghiepvubaohiemgoc
+      type: numeric
+    - name: tgduphongtoanhoc
+      type: numeric
+    - name: tanggiamduphongcamketdaututoithieu
+      type: numeric
+    - name: tanggiamduphongchialai
+      type: numeric
+    - name: tanggiamduphongdambaocandoi
+      type: numeric
+    - name: tanggiamduphongnghiepvubaohiemgockhac
+      type: numeric
+    - name: tgduphongboithuongbaohiemgoc
+      type: numeric
+    - name: tgduphongboithuongnhuongtaibaohiem
+      type: numeric
+    - name: tongchiboithuongvatratienbaohiem
+      type: numeric
+    - name: trichduphongdaodonglon
+      type: numeric
+    - name: chikhachdkdbaohiemgoc
+      type: numeric
+    - name: chihoahongbaohiemgoc
+      type: numeric
+    - name: chidoinguoithu3
+      type: numeric
+    - name: chixulyhangboithuong100
+      type: numeric
+    - name: chidephonghanchetonthat
+      type: numeric
+    - name: chigiamdinhchidanhgiaruirodoituongduocbaohiemchikhac
+      type: numeric
+    - name: chiphibanhangbaohiemgoc
+      type: numeric
+    - name: chikhachdbaohiemgoc
+      type: numeric
+    - name: chikhachdkdnhantaibaohiem
+      type: numeric
+    - name: chihdnhuongtaibaohiem
+      type: numeric
+    - name: chikhachoatdongkinhdoanhbaohiem
+      type: numeric
+    - name: tongchitructiephdkdbaohiem
+      type: numeric
+    - name: lngop
+      type: numeric
+    - name: lntuhdkdkhac
+      type: numeric
+    - name: doanhthuhdkdkhac
+      type: numeric
+    - name: cphdkdkhac
+      type: numeric
+    - name: lnhdtaichinh
+      type: numeric
+    - name: doanhthuhdtaichinh
+      type: numeric
+    - name: chiphitaichinh
+      type: numeric
+    - name: lailotucongtyliendoanhlienket
+      type: numeric
+    - name: chiphiquanlydn
+      type: numeric
+    - name: lnthuantuhdkd
+      type: numeric
+    - name: lnkhac
+      type: numeric
+    - name: thunhapkhac
+      type: numeric
+    - name: chiphikhac
+      type: numeric
+    - name: tonglnketoantruocthue_bs
+      type: numeric
+    - name: chiphithuetndnhienhanh
+      type: numeric
+    - name: chiphithuetndnhoanlai
+      type: numeric
+    - name: lnstthunhapdn
+      type: numeric
+    - name: loiichcuacodongthieuso
+      type: numeric
+    - name: lnstcuacongtyme
+      type: numeric
+    - name: laicobantrencophieu
+      type: numeric
+  primary:
+    - code
+    -  type
+    -  quy
+    -  nam

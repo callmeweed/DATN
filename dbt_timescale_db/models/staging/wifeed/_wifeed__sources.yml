@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+  - name: wifeed
+    description: A replica of the Postgres database used as the backend of DSAI MDP TimescaleDB
+    schema: public
+    tables:
+      - name: wifeed_bctc_chi_so_tai_chinh_ttm_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_quarter_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_year_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_bao_hiem_quarter_v2_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_bao_hiem_ttm_v2_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_bao_hiem_year_v2_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_chung_khoan_quarter_v2_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_chung_khoan_ttm_v2_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_chung_khoan_year_v2_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_ngan_hang_quarter_v2_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_ngan_hang_ttm_v2_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_ngan_hang_year_v2_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_doanh_nghiep_san_xuat_ttm_v2_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_doanh_nghiep_san_xuat_quarter_v2_raw
+      - name: wifeed_bctc_chi_so_tai_chinh_doanh_nghiep_san_xuat_year_v2_raw
+
+      - name: wifeed_bctc_ket_qua_kinh_doanh_bao_hiem_raw
+      - name: wifeed_bctc_ket_qua_kinh_doanh_chung_khoan_raw
+      - name: wifeed_bctc_ket_qua_kinh_doanh_doanh_nghiep_san_xuat_raw
+      - name: wifeed_bctc_ket_qua_kinh_doanh_ngan_hang_raw
+
+      - name: wifeed_bctc_ttcb_doanh_nghiep_v2_raw
+      - name: wifeed_danh_sach_ma_chung_khoan_raw
+
+
+
+
+

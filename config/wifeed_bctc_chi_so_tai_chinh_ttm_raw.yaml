@@ -1,0 +1,112 @@
+schema:
+  table_name: wifeed_bctc_chi_so_tai_chinh_ttm_raw
+  columns:
+    - name: code
+      type: text
+    - name: type
+      type: text
+    - name: quy
+      type: numeric
+    - name: nam
+      type: numeric
+    - name: soluongluuhanh_ttm
+      type: numeric
+    - name: eps_ttm
+      type: numeric
+    - name: bookvalue_ttm
+      type: numeric
+    - name: vonhoa_ttm
+      type: numeric
+    - name: ev_ttm
+      type: numeric
+    - name: fcff_ttm
+      type: numeric
+    - name: bienlaigop_ttm
+      type: numeric
+    - name: bienlaithuan_ttm
+      type: numeric
+    - name: bienlaiebit_ttm
+      type: numeric
+    - name: bienlaitruocthue_ttm
+      type: numeric
+    - name: vongquaytaisan_ttm
+      type: numeric
+    - name: vongquayphaithu_ttm
+      type: numeric
+    - name: vongquaytonkho_ttm
+      type: numeric
+    - name: vongquayphaitra_ttm
+      type: numeric
+    - name: roa_ttm
+      type: numeric
+    - name: roe_ttm
+      type: numeric
+    - name: roic_ttm
+      type: numeric
+    - name: dongtien_hdkd_lnthuan_ttm
+      type: numeric
+    - name: tongno_tongtaisan_ttm
+      type: numeric
+    - name: congnonganhan_tongtaisan_ttm
+      type: numeric
+    - name: congnodaihan_tongtaisan_ttm
+      type: numeric
+    - name: thanhtoan_hienhanh_ttm
+      type: numeric
+    - name: thanhtoan_nhanh_ttm
+      type: numeric
+    - name: thanhtoan_tienmat_ttm
+      type: numeric
+    - name: novay_dongtienhdkd_ttm
+      type: numeric
+    - name: ebit_laivay_ttm
+      type: numeric
+    - name: pe_ttm
+      type: numeric
+    - name: pb_ttm
+      type: numeric
+    - name: ps_ttm
+      type: numeric
+    - name: p_ocf_ttm
+      type: numeric
+    - name: ev_ocf_ttm
+      type: numeric
+    - name: ev_ebit_ttm
+      type: numeric
+    - name: nim_ttm
+      type: numeric
+    - name: cof_ttm
+      type: numeric
+    - name: yea_ttm
+      type: numeric
+    - name: cir_ttm
+      type: numeric
+    - name: doanhthu_ttm
+      type: numeric
+    - name: lairong_ttm
+      type: numeric
+    - name: novay_ttm
+      type: numeric
+    - name: tonkho_ttm
+      type: numeric
+    - name: ocf_ttm
+      type: numeric
+    - name: thunhaplaithuan_ttm
+      type: numeric
+    - name: tongthunhaphoatdong_ttm
+      type: numeric
+    - name: car_ttm
+      type: numeric
+    - name: tt_thunhaplaithuan_ttm_yoy
+      type: numeric
+    - name: tt_doanhthu_ttm_yoy
+      type: numeric
+    - name: tt_lairong_ttm_yoy
+      type: numeric
+    - name: tt_ocf_ttm_yoy
+      type: numeric
+  primary:
+    - code
+    - type
+    - quy
+    - nam

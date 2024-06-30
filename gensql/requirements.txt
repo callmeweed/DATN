@@ -1,0 +1,8 @@
+underthesea==6.3.0
+qdrant-client==1.1.7
+langchain==0.0.341
+tqdm==4.62.3
+promptlayer==0.1.90
+python-dotenv==1.0.0
+uvicorn[standard]==0.21.1
+fastapi==0.95.1

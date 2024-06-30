@@ -1,0 +1,66 @@
+schema:
+  table_name: wifeed_bctc_ket_qua_kinh_doanh_doanh_nghiep_san_xuat_raw
+  columns:
+    - name: code
+      type: text
+    - name: type
+      type: text
+    - name: quy
+      type: numeric
+    - name: nam
+      type: numeric
+    - name: donvikiemtoan
+      type: text
+    - name: ykienkiemtoan
+      type: text
+    - name: doanhthubanhangvacungcapdichvu
+      type: numeric
+    - name: cackhoangiamtrudoanhthu
+      type: numeric
+    - name: doanhthuthuanvebanhangvacungcapdichvu
+      type: numeric
+    - name: giavonhangban
+      type: numeric
+    - name: loinhuangopvebanhangvacungcapdichvu
+      type: numeric
+    - name: doanhthuhoatdongtaichinh
+      type: numeric
+    - name: chiphitaichinh
+      type: numeric
+    - name: trongdochiphilaivay
+      type: numeric
+    - name: phanlailohoaclotrongcongtyliendoanhlienket
+      type: numeric
+    - name: chiphibanhang
+      type: numeric
+    - name: chiphiquanlydoanhnghiep
+      type: numeric
+    - name: loinhuanthuantuhoatdongkinhdoanh
+      type: numeric
+    - name: thunhapkhac
+      type: numeric
+    - name: chiphikhac
+      type: numeric
+    - name: loinhuankhac
+      type: numeric
+    - name: tongloinhuanketoantruocthue
+      type: numeric
+    - name: chiphithuetndnhienhanh
+      type: numeric
+    - name: chiphithuetndnhoanlai
+      type: numeric
+    - name: loinhuansauthuethunhapdoanhnghiep
+      type: numeric
+    - name: loiichcuacodongthieuso_bctn
+      type: numeric
+    - name: loinhuansauthuecuacongtyme
+      type: numeric
+    - name: laicobantrencophieu
+      type: numeric
+    - name: laisuygiamtrencophieu
+      type: numeric
+  primary:
+    - code
+    -  type
+    -  quy
+    -  nam

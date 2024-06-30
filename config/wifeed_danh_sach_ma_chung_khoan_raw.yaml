@@ -1,0 +1,15 @@
+schema:
+  table_name: wifeed_danh_sach_ma_chung_khoan_raw
+  columns:
+    - name: code
+      type: text
+    - name: fullname_vi
+      type: text
+    - name: loaidn
+      type: numeric
+    - name: san
+      type: text
+    - name: crawled_date
+      type: timestamp
+  primary:
+    - code

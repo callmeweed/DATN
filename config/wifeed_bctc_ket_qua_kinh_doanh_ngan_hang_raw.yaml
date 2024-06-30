@@ -1,0 +1,68 @@
+schema:
+  table_name: wifeed_bctc_ket_qua_kinh_doanh_ngan_hang_raw
+  columns:
+    - name: code
+      type: text
+    - name: type
+      type: text
+    - name: quy
+      type: numeric
+    - name: nam
+      type: numeric
+    - name: donvikiemtoan
+      type: text
+    - name: ykienkiemtoan
+      type: text
+    - name: thunhaplaivacackhoanthunhaptuongtu
+      type: numeric
+    - name: chiphilaivacacchiphituongtu
+      type: numeric
+    - name: thunhaplaithuan
+      type: numeric
+    - name: thunhaptuhoatdongdichvu
+      type: numeric
+    - name: chiphihoatdongdichvu
+      type: numeric
+    - name: laithuantuhoatdongdichvu
+      type: numeric
+    - name: lailothuantuhoaydongkinhdoanhngoaihoivavang
+      type: numeric
+    - name: lailothuantumuabanchungkhoankinhdoanh
+      type: numeric
+    - name: lailothuantumuabanchungkhoandautu
+      type: numeric
+    - name: thunhaptuhoatdongkhac
+      type: numeric
+    - name: chiphihoatdongkhac
+      type: numeric
+    - name: lailothuantuhoatdongkhac
+      type: numeric
+    - name: thunhaptugopvonmuacophan
+      type: numeric
+    - name: tongthunhaphoatdong
+      type: numeric
+    - name: chiphihoatdong
+      type: numeric
+    - name: loinhuanthuantuhdkdtruocchiphiduphongruirotindung
+      type: numeric
+    - name: chiphiduphongruirotindung
+      type: numeric
+    - name: tongloinhuantruocthue
+      type: numeric
+    - name: chiphithuetndnhienhanh
+      type: numeric
+    - name: chiphithuetndnhoanlai
+      type: numeric
+    - name: chiphithuethunhapdoanhnghiep
+      type: numeric
+    - name: loinhuansauthue
+      type: numeric
+    - name: loiichcuacodongthieuso_pl
+      type: numeric
+    - name: codongcuacongtyme
+      type: numeric
+  primary:
+    - code
+    -  type
+    -  quy
+    -  nam
