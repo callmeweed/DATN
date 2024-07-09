@@ -53,7 +53,7 @@ class DnseIndicatorSignal(MinerBase):
                                ("macd_histogram_tag", "varchar(20)"),
                                ("bb_width", "numeric"),
                                ("bb_width_tag", "varchar(20)"),
-
+                               ("symbol", "varchar(20)"),
                                ('close_price', "numeric")
                            ]
                            )
@@ -215,6 +215,7 @@ class DnseIndicatorSignal(MinerBase):
         out_dict['macd_tag'] = macd_tag
         out_dict['bb_width'] = bb_width
         out_dict['bb_width_tag'] = bb_width_tag
+        out_dict['symbol'] = symbol
 
         out_dict['close_price'] = nearest_close_price
 

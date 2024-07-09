@@ -438,7 +438,7 @@
         "other": null,
         "fields": [
             {
-                "field": "symbol_",
+                "field": "symbol",
                 "explanation": "Mã chứng khoán, công ty, doanh nghiệp, tập đoàn, ví dụ: HPG, vic, vcb,...",
                 "key": "distkey",
                 "type": "varchar(65535)",
