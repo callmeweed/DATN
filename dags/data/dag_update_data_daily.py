@@ -11,7 +11,6 @@ from producer.wifeed_chi_so_tai_chinh import WiFeedChiSoTaiChinh
 from producer.wifeed_bao_cao_tai_chinh import WiFeedBaoCaoTaiChinh
 from producer.wifeed_api import WifeedApi
 
-# from common.airflow_to_mattermost import send_message_to_mattermost
 from common.utils import CATEGORY_WIFEED
 from airflow.utils.session import provide_session
 
@@ -23,12 +22,10 @@ default_args = {
     "owner": "DSAI Team",
     "depends_on_past": False,
     "start_date": datetime(2023, 1, 1, 0, tzinfo=pendulum.timezone('Asia/Ho_Chi_Minh')),
-    "email": ["kienvu@dnse.com.vn"],
     "email_on_failure": False,
     "email_on_retry": False,
     "retries": 2,
     "retry_delay": 60,
-    # 'on_failure_callback': send_message_to_mattermost(),
 }
 
 with DAG(

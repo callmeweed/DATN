@@ -6,7 +6,6 @@ from airflow.operators.bash import BashOperator
 from airflow.models.taskinstance import TaskInstance
 from airflow.operators.python import PythonOperator
 
-# from common.airflow_to_mattermost import send_message_to_mattermost
 
 dag_name = "dbt_docs"
 
@@ -14,12 +13,10 @@ default_args = {
     "owner": "DSAI Team",
     "depends_on_past": False,
     "start_date": datetime(2023, 2, 22),
-    "email": ["khoa.doan@dnse.com.vn"],
     "email_on_failure": False,
     "email_on_retry": False,
     "retries": 0,
     "retry_delay": 60,
-    # 'on_failure_callback': send_message_to_mattermost(token_env_var="MM_WEBHOOK_DBT_URL"),
 }
 
 with DAG(

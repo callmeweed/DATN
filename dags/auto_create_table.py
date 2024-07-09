@@ -9,7 +9,6 @@ from datetime import datetime
 from airflow.models import Variable
 from airflow.operators.python import PythonOperator
 
-# from common.airflow_to_mattermost import send_message_to_mattermost
 from generators.generator import Generator
 import yaml
 
@@ -21,12 +20,10 @@ default_args = {
     "owner": "DSAI Team",
     "depends_on_past": False,
     "start_date": datetime(2021, 1, 1, 0, tzinfo=pendulum.timezone('Asia/Ho_Chi_Minh')),
-    "email": ["kienvu@dnse.com.vn"],
     "email_on_failure": False,
     "email_on_retry": False,
     "retries": 1,
     "retry_delay": 60,
-    # 'on_failure_callback': send_message_to_mattermost(),
 }
 
 with DAG(
