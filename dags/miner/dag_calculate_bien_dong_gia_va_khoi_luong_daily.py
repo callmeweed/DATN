@@ -40,7 +40,7 @@ with (DAG(
         # exec_date = context["logical_date"]
         exec_date = context["execution_date"]
         runtime_date_format = datetime.strptime(datetime.strftime(exec_date, "%Y-%m-%d"),
-                                                "%Y-%m-%d") + relativedelta(days=1)
+                                                "%Y-%m-%d") - relativedelta(days=1)
         running_date = params.get("running_date")
         start_date = params.get("start_date")
         end_date = params.get("end_date")

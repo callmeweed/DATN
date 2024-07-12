@@ -11,10 +11,6 @@ from requests.adapters import Retry
 from storage.connection_utils import PSQLHook
 
 
-def is_response_empty(response):
-    return response.status_code == 200 and len(response.content) == 0
-
-
 class WifeedApi:
     def __init__(self, pool_connections=10):
         self.session = requests.Session()

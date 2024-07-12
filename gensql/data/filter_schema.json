@@ -460,14 +460,14 @@
             },
             {
                 "field": "rsi_tag",
-                "explanation": "Tín hiệu kỹ thuật đưa ra từ chỉ số RSI của công ty, mã chứng khoán, doanh nghiệp, tập đoàn. ví dụ: mua, bán, trung tính",
+                "explanation": "Tín hiệu kỹ thuật đưa ra từ chỉ số RSI của công ty, mã chứng khoán, doanh nghiệp, tập đoàn bao gồm các nhãn: mua, ban, trung_tinh tương ứng với mua, bán, trung tính",
                 "key": null,
                 "type": "double precision",
                 "default": 0
             },
             {
                 "field": "macd_tag",
-                "explanation": "Tín hiệu kỹ thuật đưa ra từ chỉ số MACD của công ty, mã chứng khoán, doanh nghiệp, tập đoàn. ví dụ: mua, bán, trung tính",
+                "explanation": "Tín hiệu kỹ thuật đưa ra từ chỉ số MACD của công ty, mã chứng khoán, doanh nghiệp, tập đoàn bao gồm các nhãn: mua, ban, trung_tinh tương ứng với mua, bán, trung tính",
                 "key": null,
                 "type": "double precision",
                 "default": 0

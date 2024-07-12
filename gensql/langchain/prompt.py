@@ -74,22 +74,3 @@ repair_prompt = """#Nhiệm vụ: Sửa lại câu truy vấn SQL để trả l�
 REPAIR_TEMPLATE = PromptTemplate(
     template=repair_prompt, input_variables=["question", "time", "old_SQL", "explanation", "script_tables"]
 )
-
-
-# ensembler
-ensembler_template = """Đóng vai trợ lý ảo trả lời câu hỏi liên quan chứng khoán, hãy trả lời câu hỏi sau của người dùng dựa trên thông tin kèm theo:
-- Câu hỏi: {question}
-- Kết quả truy vấn: {query_result}
-- Câu truy vấn SQL: {SQL}
-- Trả lời ngắn gọn trong 1 đến 2 câu văn.
-- Nếu dữ liệu cung cấp không đủ để trả lời câu hỏi thì thông báo không có dữ liệu, không bịa đặt thông tin
-- Giá trị của các trường như doanh thu, lợi nhuận phải quy về đơn vị `Tỷ VNĐ`
-- Câu trả lời bằng tiếng việt:
-"""
-# ENSEMBLER_TEMPLATE = PromptTemplate(
-#     template=ensembler_template, input_variables=["question", "query_result", "SQL"]
-# )
-ENSEMBLER_TEMPLATE = ChatPromptTemplate(
-    messages = [_convert_to_message(("user", ensembler_template))],
-    input_variables = ["question", "query_result", "SQL", "n_records"]
-)

@@ -18,7 +18,6 @@ from common.template_loader import TemplateLoader
 class ConnectionId(Enum):
     POSTGRES_LOCAL = 'TIMESCALEDB_LOCAL'
     POSTGRES_PRODUCTION = 'TIMESCALEDB_PRD'
-    ENCAP_TIMESCALEDB_PRD = 'ENCAP_TIMESCALEDB_PRD'
 
 
 def get_connection_name_by_env():
@@ -68,19 +67,6 @@ class PSQLHook(PostgresHook):
             logging.error(f"Failed query: {query}")
             logging.error(e)
             raise e
-
-    def execute_query_params(self, long_queries: str, params: list) -> None:
-        queries = [q.strip() for q in long_queries.split(';')]
-        try:
-            cursor = self.get_conn().cursor()
-            for query in queries:
-                if len(query) > 3:
-                    cursor.execute(query, params)
-                    self.conn.commit()
-        except Exception as e:
-            logging.error(f"Failed query: {query}")
-            logging.error(e)
-            traceback.print_exc()
 
     def execute_query_result_dataframe(self, query: str, parameters=None):
         try:
@@ -201,14 +187,6 @@ class PSQLHook(PostgresHook):
             "symbol_column": symbol_column, "table_name": table_name
         }
         sql = loader.render("get_distinct_symbol.tpl", **arg)
-        return self.execute_query_result_dataframe(sql)
-
-    def get_distinct_symbol_exclude_future(self, symbol_column, table_name):
-        loader = TemplateLoader()
-        arg = {
-            "symbol_column": symbol_column, "table_name": table_name
-        }
-        sql = loader.render("get_distinct_symbol_exclude_future.tpl", **arg)
         return self.execute_query_result_dataframe(sql)
 
     def append(
@@ -354,14 +332,6 @@ class PSQLHook(PostgresHook):
         df_output = self.execute_query_result_dataframe(sql)
         return df_output['max'].iloc[0]
 
-    def delete_from_table(self, table_name, filter_query):
-        loader = TemplateLoader()
-        args = {'table_name': table_name, 'filter_query': filter_query}
-        sql = loader.render("delete_from_table.tpl", **args)
-        logging.info(f"Delete from table {table_name} with filter {filter_query}")
-        self.execute_postgres_query(sql)
-        return
-
     def truncate_table(self, table_name):
         loader = TemplateLoader()
         args = {'table_name': table_name}
@@ -374,94 +344,3 @@ class PSQLHook(PostgresHook):
             logging.error(e)
             raise e
         return
-
-    def update_rows(self, sql_query, data):
-        try:
-            connection = self.get_conn()
-            cursor = connection.cursor()
-            logging.info("Execute query :\n" + sql_query)
-            psycopg2.extras.execute_batch(cursor, sql_query, data)
-            connection.commit()
-        except Exception as e:
-            logging.error(e)
-            raise e
-
-    def get_record_filter_query(
-        self,
-        table_name: str,
-        filter_query: str = None
-    ) -> DataFrame:
-        """
-        Get record from redshift table
-
-        :param table_name: table name
-        :param filter_query: filter query
-        :return: DataFrame
-        """
-        loader = TemplateLoader()
-        args = {
-            "table_name": table_name,
-            "filter_query": filter_query
-        }
-        sql = loader.render("get_record_filter_query.tpl", **args)
-        return self.execute_query_result_dataframe(sql)
-
-
-class EncapPSQLHook(PostgresHook):
-
-    def __init__(self):
-        print('Starting connection')
-        self.connection_name = ConnectionId.ENCAP_TIMESCALEDB_PRD.value
-        super().__init__(postgres_conn_id=self.connection_name)
-        self.conn = self.get_conn()
-
-    def get_record(self, table_name, indexed_timestamp, symbol_column, target_symbols=None, filter_query=None):
-        loader = TemplateLoader()
-        args = {'table_name': table_name, 'time': indexed_timestamp, "symbol_column": symbol_column,
-                'target_symbols': target_symbols, 'filter_query': filter_query}
-        sql = loader.render("encap_get_record.tpl", **args)
-        return self.execute_query_result_dataframe(sql)
-
-    def get_record_range(self, table_name, included_min_timestamp, included_max_timestamp,
-                         symbol_column, target_symbols=None, filter_query=None, ):
-        loader = TemplateLoader()
-        args = {'table_name': table_name, 'included_min_timestamp': included_min_timestamp,
-                'included_max_timestamp': included_max_timestamp, "symbol_column": symbol_column,
-                'target_symbols': target_symbols, 'filter_query': filter_query}
-        sql = loader.render("encap_get_record_range.tpl", **args)
-        return self.execute_query_result_dataframe(sql)
-
-    def execute_query_params(self, long_queries: str, params: list) -> None:
-        queries = [q.strip() for q in long_queries.split(';')]
-        try:
-            cursor = self.get_conn().cursor()
-            for query in queries:
-                if len(query) > 3:
-                    cursor.execute(query, params)
-                    self.conn.commit()
-        except Exception as e:
-            logging.error(f"Failed query: {query}")
-            logging.error(e)
-            traceback.print_exc()
-
-    def execute_query_result_dataframe(self, query: str, parameters=None):
-        try:
-            # cursor = self.get_conn().cursor()
-            logging.info("Execute query :\n" + query)
-            # cursor.execute(query)
-            result = self.get_pandas_df(query, parameters)
-            # self.conn.commit()
-            return result
-
-        except Exception as e:
-            logging.error(f"Failed query: {query}")
-            logging.error(e)
-            raise e
-
-    def get_distinct_symbol_exclude_future(self, symbol_column, table_name):
-        loader = TemplateLoader()
-        arg = {
-            "symbol_column": symbol_column, "table_name": table_name
-        }
-        sql = loader.render("get_distinct_symbol_exclude_future.tpl", **arg)
-        return self.execute_query_result_dataframe(sql)

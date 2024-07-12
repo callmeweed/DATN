@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: wifeed
-    description: A replica of the Postgres database used as the backend of DSAI MDP TimescaleDB
+    description: datasource wifeed
     schema: public
     tables:
       - name: wifeed_bctc_chi_so_tai_chinh_ttm_raw

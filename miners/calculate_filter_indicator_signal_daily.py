@@ -128,8 +128,6 @@ class DnseIndicatorSignal(MinerBase):
                 return
             else:
                 close_price = index_price_data['close']
-                low_price = index_price_data['low']
-                high_price = index_price_data['high']
 
         else:
             if len(stock_price_data) < 14 :
@@ -138,18 +136,10 @@ class DnseIndicatorSignal(MinerBase):
             else:
                 # get 3 type price of symbol
                 close_price = stock_price_data['close_price']
-                low_price = stock_price_data['low_price']
-                high_price = stock_price_data['high_price']
 
         #get new price
         try:
-            # get max high_price and min low_price
-            min_low_price = low_price.min()
-            max_high_price = high_price.max()
-
             nearest_close_price = close_price.iloc[-1]
-            nearest_low_price = low_price.iloc[-1]
-            nearest_high_price = high_price.iloc[-1]
         except:
             print('EROR for symbol: {}'.format(symbol))
             return
@@ -187,9 +177,6 @@ class DnseIndicatorSignal(MinerBase):
 
 
         upper, middle, lower = ta.BBANDS(close_price, timeperiod=20, nbdevup=2, nbdevdn=2)
-        last_upper = upper.iloc[-1]
-        last_lower = lower.iloc[-1]
-
 
 
         bb_width = (upper.iloc[-1] - lower.iloc[-1]) / middle.iloc[-1]

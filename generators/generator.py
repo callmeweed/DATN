@@ -4,18 +4,10 @@ import logging
 
 from common.template_loader import TemplateLoader
 from storage.connection_utils import PSQLHook
-from streams.data_stream_base import DataStreamBase
-from storage.storage_base import StorageBase
 from storage.database_storage import DatabaseStorage
 from streams.stream_cfg import StreamCfg
 from common.utils import format_timedelta, generated_identified_name
 
-
-# def format_timedelta(t_delta, fmt):
-#    d = {"days": t_delta.days}
-#    d["hours"], rem = divmod(t_delta.seconds, 3600)
-#    d["minutes"], d["seconds"] = divmod(rem, 60)
-#    return fmt.format(**d)
 
 
 def identified_table_name(stream_cfg: StreamCfg):
@@ -107,78 +99,3 @@ class Generator:
         db_storage = PSQLHook()
         db_storage.create_table(table_name, colums, primary_list=primary_list)
         return
-
-    def generate_task(self, miner_cfg):
-        miners = miner_cfg['class_name']
-        loader = TemplateLoader('template/dag_template')
-        args = {'miners': miners}
-        sql = loader.render("task_code.tpl", **args)
-        return sql + "\n"
-
-    def generate_logic(self, miner_cfg):
-        miners = miner_cfg['class_name']
-        target_symbols = "target_symbols=['HPG', 'VNM']"
-        loader = TemplateLoader('template/dag_template')
-        args = {'miners': miners, 'target_symbols': target_symbols}
-        sql = loader.render("logic_code.tpl", **args)
-        return sql + "\n"
-
-    def get_distinct_timestep(self, miner_cfgs):
-        dist_timestep = set()
-        for cfg in miner_cfgs:
-            dist_timestep.add(miner_cfgs[cfg]['output']['timestep'])
-
-        return dist_timestep
-
-    def generate_depends(self, miner_cfgs, timestep):
-        depends = set()
-        miner_cfgs = {k: v for k, v in miner_cfgs.items() if v['output']['timestep'] == timestep}
-        for out in miner_cfgs:
-            for inp in miner_cfgs:
-                if miner_cfgs[out]['output'] in miner_cfgs[inp]['input']:
-                    depends.add(f"{miner_cfgs[out]['class_name'].lower()} >> {miner_cfgs[inp]['class_name'].lower()}")
-                else:
-                    depends.add(f"{miner_cfgs[out]['class_name'].lower()}")
-
-        depends_str = "\n    ".join(depends)
-        return depends_str
-
-    def generate_dag(self, miner_cfgs):
-        """
-        Generate dag file and save to dag folder. Consider jinja2 templating.
-        """
-        # get distinct timestep from config
-        dist_timestep = self.get_distinct_timestep(miner_cfgs)
-        # for each timestep
-        for item_timestep in dist_timestep:
-            str_gen_logic = ""
-            str_gen_task = ""
-            depends_code = self.generate_depends(miner_cfgs, item_timestep)
-
-            # for miner để lấy ra các timestep giống nhau và gán vào logics + task string
-            for cfg in miner_cfgs:
-                if miner_cfgs[cfg]['output']['timestep'] == item_timestep:
-                    str_gen_logic += self.generate_logic(miner_cfgs[cfg])
-                    str_gen_task += self.generate_task(miner_cfgs[cfg])
-            args_dag = {
-                "dag_name": format_timedelta(item_timestep, '{days}d{hours}h{minutes}m'),
-                "logic_code": str_gen_logic,
-                "task_code": str_gen_task,
-                "schedule_interval": f"timedelta(seconds={item_timestep.total_seconds()})",
-                "depends_code": depends_code
-            }
-            # print(args_dag)
-            loader = TemplateLoader('template/dag_template')
-            sql = loader.render("dag_code.tpl", **args_dag)
-            file_name = f"{format_timedelta(item_timestep, '{days}d{hours}h{minutes}m')}.py"
-            with open(f"../dags/{file_name}", "w") as f:
-                f.write(sql)
-            print(f"Create dag {file_name} successfully")
-            # params input gen logic: miners, target_symbols
-            # params input gen task: miners
-
-        #  generate tung dag file theo tung timestep
-        #    gen logic, gen task, gen cac thong tin con lai, gen dag
-        #  save tung dag file vao tung folder
-
-        pass

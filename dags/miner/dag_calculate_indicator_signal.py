@@ -14,8 +14,7 @@ dag_name = "miners_calculate_indicator_signal_calculation_daily"
 default_args = {
     "owner": "DSAI Team",
     "depends_on_past": False,
-    "start_date": datetime(2022, 1, 1, 0, tzinfo=pendulum.timezone('Asia/Ho_Chi_Minh')),
-    "email": ["kienvu@dnse.com.vn"],
+    "start_date": datetime(2022, 1, 1, 0, tzinfo=pendulum.timezone('Asia/Ho_Chi_Minh')),\
     "email_on_failure": False,
     "email_on_retry": False,
     "retries": 1,

@@ -1,3 +1,5 @@
+from pandas import DataFrame
+
 from storage.storage_base import StorageBase
 from storage.connection_utils import PSQLHook
 from common.utils import *
